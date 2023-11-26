@@ -20,7 +20,7 @@ namespace Auxo_BackEnd.Controllers
         public IActionResult PlaceOrder(Order[] orders)
         {
             try
-            {
+                        {
                 _logger.LogInformation($"Beginning Process {nameof(OrderController)}.{nameof(PlaceOrder)}");
 
                 var order = _partsService.PlaceOrder(orders);
